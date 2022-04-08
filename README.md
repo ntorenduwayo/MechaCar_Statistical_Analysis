@@ -69,3 +69,4 @@ To run the statistical Test, I assumed that:</br>
 	*The dependent variable is normally distributed.</br>
 	*The variance among each group is similar.
 
+#### Note: For the R script see the MechaCarChallenge.R file in the repository.
