@@ -37,7 +37,7 @@ However, the t-test’s p-value for lot 3 sample mean against the population mea
 
 ### Table 6:  T-test that Compares All Manufacturing Lots Against Mean PSI Of the Population 
 ![t_test_Across_All_Manuf_Lots](https://user-images.githubusercontent.com/34750363/162322962-87d862ba-34db-4a75-9f0f-b4bd13a9ba03.png)</br>
-
+From the table above, the t-test’s p-values for all lots mean (i.e., 0.06 ) against the population mean is less than the assumed 0.05 p-value. Therefore, we have sufficient evidence to reject the null hypothesis that the means are similar. In other words, there is sufficient evidence that both means are statistically different.
 
 ## Study Design: MechaCar vs Competition.
 A car Fuel consumption is an important factor in the car market, this metric is calculated by estimating the distance measured in miles that a car can travel per gallon of fuel (i.e., mpg). In retrospect, mpg is an important metric or a fact that impacts car buyers and car manufacturers alike in their decision to buy a car and making cars respectively. For most buyers, they are more likely to buy a car with a low mpg, while for the manufacturers they aspire to make cars that are fuel efficient to entice buyers and rule out competition from other car makers.</br>
