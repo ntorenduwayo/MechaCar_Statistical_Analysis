@@ -29,11 +29,15 @@ But the data distribution in all three lots (as a whole), and for each lot indiv
 ![Rplot2](https://user-images.githubusercontent.com/34750363/162347659-ad6b872b-9546-457f-8515-18bc118163d0.png)
 
 ## T-Tests on Suspension Coils
-### Table 5:  T-test that Compares All Manufacturing Lots Against Mean PSI Of the Population
-![T_test_2](https://user-images.githubusercontent.com/34750363/162322565-064b6463-7597-4f5b-8307-0a7234c1a402.png)
+### Table 5: Three t-tests that Compare Each Manufacturing Lot Against Mean PSI Of the Population
 
-### Table 6:  Three t-tests that Compare Each Manufacturing Lot Against Mean PSI Of the Population 
-![t_test_Across_All_Manuf_Lots](https://user-images.githubusercontent.com/34750363/162322962-87d862ba-34db-4a75-9f0f-b4bd13a9ba03.png)
+![T_test_2](https://user-images.githubusercontent.com/34750363/162322565-064b6463-7597-4f5b-8307-0a7234c1a402.png)</br>
+From the tables above, we see that the t-test’s p-values for lot 1 and 2 sample means (i.e., 1 and 0.6 respectively) against the population mean are greater than the assumed 0.05 p-value. Therefore, we do not have sufficient evidence to reject the null hypothesis (i.e., the means are the same). So, the lot 1 and lot 2 sample means are statistically similar to the population mean.
+However, the t-test’s p-value for lot 3 sample mean against the population mean is less than the assumed 0.05 p-value. Therefore, we have sufficient evidence to reject the null hypothesis (i.e., the means are the same). So, the lot 3 sample mean, and the population mean are statistically different. Therefore, in this case we may have to check the coil quality, and possibly correct in shortcoming in the lot 3 manufacturing process. 
+
+### Table 6:  T-test that Compares All Manufacturing Lots Against Mean PSI Of the Population 
+![t_test_Across_All_Manuf_Lots](https://user-images.githubusercontent.com/34750363/162322962-87d862ba-34db-4a75-9f0f-b4bd13a9ba03.png)</br>
+
 
 ## Study Design: MechaCar vs Competition.
 A car Fuel consumption is an important factor in the car market, this metric is calculated by estimating the distance measured in miles that a car can travel per gallon of fuel (i.e., mpg). In retrospect, mpg is an important metric or a fact that impacts car buyers and car manufacturers alike in their decision to buy a car and making cars respectively. For most buyers, they are more likely to buy a car with a low mpg, while for the manufacturers they aspire to make cars that are fuel efficient to entice buyers and rule out competition from other car makers.</br>
