@@ -5,6 +5,7 @@ getwd()
 ## Deliverable 1: Linear Regression to Predict MPG
 # Installing necessary library
 library("dplyr")
+library("tidyverse")
 # Read in the MechaCar_MPG dataset
 MechaCar_mpg <- read.csv(file='MechaCar_mpg.csv',check.names=F,stringsAsFactors = F) 
 # Multiple linear regression model:
@@ -26,6 +27,13 @@ total_summary <- Suspension_Coil%>%summarize(Mean = mean(PSI),
                                              SD = sd(PSI),
                                              .groups = 'keep')
 total_summary
+
+### box plot: PSI Whole lot
+#import dataset into ggplot2
+plot1 <- ggplot(Suspension_Coil,aes(y=PSI)) 
+#add boxplot
+plot1 + geom_boxplot() 
+
 # 4. creating a lot_summary dataframe using the group_by() 
 # and the summarize() functions
 lot_summary <- Suspension_Coil%>%group_by(Manufacturing_Lot)%>%
@@ -35,6 +43,12 @@ lot_summary <- Suspension_Coil%>%group_by(Manufacturing_Lot)%>%
             SD = sd(PSI),
             .groups = 'keep')
 lot_summary
+
+#box plot: PSI for each individual Lot
+#import dataset into ggplot2
+plot2 <- ggplot(Suspension_Coil,aes(x=Manufacturing_Lot,y=PSI))
+#add boxplot
+plot2 + geom_boxplot()
 
 # Deliverable 3: T-Tests on Suspension Coils                      
 # 1.  using the t.test() function to determine if the PSI across ### 
